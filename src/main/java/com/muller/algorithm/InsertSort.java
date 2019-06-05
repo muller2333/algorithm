@@ -2,7 +2,7 @@ package com.muller.algorithm;
 
 import com.muller.util.ArrayUtil;
 
-public class InsertBubble {
+public class InsertSort {
     /**
      * 插入排序（从小到大）
      *

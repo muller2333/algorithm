@@ -1,5 +1,5 @@
 import com.muller.algorithm.BubbleSort;
-import com.muller.algorithm.InsertBubble;
+import com.muller.algorithm.InsertSort;
 import com.muller.util.ArrayUtil;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -40,7 +40,7 @@ public class CompareSortTime {
     @Test
     public void insertSort() {
         long start = System.currentTimeMillis();
-        InsertBubble.insertSort(arr2);
+        InsertSort.insertSort(arr2);
         long end = System.currentTimeMillis();
         if (ArrayUtil.judgeAsc(arr2)) {
             System.out.println("插入排序成功,耗时:" + (end - start) + "ms");
@@ -52,7 +52,7 @@ public class CompareSortTime {
     @Test
     public void insertSort2() {
         long start = System.currentTimeMillis();
-        InsertBubble.insertSort2(arr3);
+        InsertSort.insertSort2(arr3);
         long end = System.currentTimeMillis();
         if (ArrayUtil.judgeAsc(arr3)) {
             System.out.println("插入排序(2)成功,耗时:" + (end - start) + "ms");
